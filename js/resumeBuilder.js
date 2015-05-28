@@ -81,15 +81,19 @@ var projects = {
 var bio = {
 	"name": "First Last",
 	"role": "Role",
-	"welcomeMessage": "Insert cool welcome message here!",
+	"welcomeMessage": "Insert cool welcome message here! Hello World!",
 	"contacts": {
 		"mobile": "555-555-5555",
-		"email": "ex@example.com",
-		"github": "Github",
+		"email": "email@email.com",
+		"github": "github",
 		"twitter": "@twitter",
 		"location": "Japan"
 	},
-	"skills": ["Skill 1", "Skill 2", "Skill 3", "Skill 4"],
+	"skills": [
+		"Skill 1", 
+		"Skill 2", 
+		"Skill 3", 
+		"Skill 4"],
 	"bioPic": "images/fry.jpg",
 	"display": function() {
 		var formattedHeaderName = HTMLheaderName.replace("%data%", bio.name);
@@ -203,8 +207,6 @@ $("#mapButton").click(function(){
     $("#mapDiv-box").toggle();
 });
 
-
-
 //Delay needed otherwise the map won't load properly
 function funct() {
 	$("#mapDiv-box").attr("style","display:none;");
@@ -212,13 +214,3 @@ function funct() {
 setTimeout(function (){
   $(funct);
 }, 400);
-/*
-function animation1() {
-	$("#projectsButton").attr("style","animated bounceInRight")
-}
-function animation2() {
-	$("#educationButton").attr("style","animated bounceInRight")
-}
-function animation3() {
-	$("#projectsButton").attr("style","animated bounceInRight")
-}*/
